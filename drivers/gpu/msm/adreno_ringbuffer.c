@@ -16,7 +16,6 @@
 #include <linux/log2.h>
 #include <linux/time.h>
 #include <linux/delay.h>
-
 #include "kgsl.h"
 #include "kgsl_sharedmem.h"
 #include "kgsl_trace.h"
@@ -378,9 +377,9 @@ int adreno_ringbuffer_probe(struct adreno_device *adreno_dev, bool nopreempt)
 			ADRENO_FEATURE(adreno_dev, ADRENO_PREEMPTION)) {
 
 		if (gpudev->preemption_init)
-			r = gpudev->preemption_init(adreno_dev);
+			gpudev->preemption_init(adreno_dev);
 
-		if (r == 0)
+		if ( 0)
 			set_bit(ADRENO_DEVICE_PREEMPTION, &adreno_dev->priv);
 		else
 			WARN(1, "adreno: GPU preemption is disabled\n");
