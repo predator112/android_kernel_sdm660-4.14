@@ -11,7 +11,7 @@ fwabs := $(addprefix $(srctree)/,$(filter-out /%,$(fwdir)))$(filter /%,$(fwdir))
 fw-external-y := $(subst $(quote),,$(CONFIG_EXTRA_FIRMWARE))
 
 
-# HMI_L6653_A01
+# WHYRED
 fw-shipped-$(CONFIG_TOUCHSCREEN_SYNAPTICS_DSX_E7S_FW_UPDATE) += synaptics/tianma_td4310_miui_e7s.img
 fw-shipped-$(CONFIG_TOUCHSCREEN_SYNAPTICS_DSX_E7S_FW_UPDATE) += synaptics/shenchao_td4310_miui_e7s.img
 fw-shipped-$(CONFIG_TOUCHSCREEN_NVT_E7S) += novatek/nt36672_miui_e7s.bin
