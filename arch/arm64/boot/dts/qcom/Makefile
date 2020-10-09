@@ -423,7 +423,7 @@ dtb-$(CONFIG_ARCH_MDM9607) += mdm9607-cdp.dtb \
         mdm9607-mtp.dtb \
 	mdm9607-rcm.dtb \
 
-ifeq ($(CONFIG_KERNEL_CUSTOM_E7S),y)
+ifeq ($(CONFIG_MACH_XIAOMI_WHYRED),y)
 dtb-$(CONFIG_ARCH_SDM660) += sdm636-mtp-whyred.dtb
 else
 dtb-$(CONFIG_ARCH_SDM660) += sdm660-sim.dtb \
